@@ -126,6 +126,8 @@ function renderButtons() {
 
 
 function renderPrice() {
+  let totalPrice = document.getElementsByClassName('total').innerHTML;
+  
   // Iteration 4: change the HTML of `<aside class="panel price">`
 }
 
