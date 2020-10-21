@@ -104,13 +104,19 @@ function renderButtons() {
     if(state.greenPeppers === false) {
       greenButton.setAttribute('class', 'btn btn-green-peppers');
     } else {
-      greenButton.setAttribute('class', 'btn btn-green-peppers');
+      greenButton.setAttribute('class', 'btn btn-green-peppers active');
     }
-    let = whiteButton = document.querySelector('.btn.btn-green-peppers');
+    let = whiteButton = document.querySelector('.btn.btn-sauce');
     if(state.whiteSauce === false) {
-      whiteButton.setAttribute('class', 'btn btn-green-peppers');
+      whiteButton.setAttribute('class', 'btn btn-sauce');
     } else {
-      whiteButton.setAttribute('class', 'btn btn-green-peppers');
+      whiteButton.setAttribute('class', 'btn btn-sauce active');
+    }
+    let = glutenButton = document.querySelector('.btn.btn-crust');
+    if(state.glutenFreeCrust === false) {
+      glutenButton.setAttribute('class', 'btn btn-crust');
+    } else {
+      glutenButton.setAttribute('class', 'btn btn-crust active');
     }
 
 }
